@@ -134,17 +134,9 @@ This project is licensed under the [MIT License](LICENSE).
 git clone https://github.com/your-username/cat-dog-classifier.git
 cd cat-dog-classifier
 
-## 2. Train the Model
-To train the model on your system:
-python train_model.py
-
-## The trained model is saved as cat_dog_classifier.keras.
-
-## 3. Run the Flask App
+## 2. Run the Flask App
 python app.py
 
-4. Open the Web Application
-Navigate to http://127.0.0.1:5000/ in your browser. Upload an image to classify it as a cat or a dog.
 
 
 
