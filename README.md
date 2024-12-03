@@ -1,28 +1,27 @@
 # 🐾 Cat vs. Dog Image Classifier 🐾
 
-This project is a deep learning-based image classification model that identifies whether an uploaded image is of a **cat** or a **dog**. The model is trained on a dataset of 22k+ images and deployed using Flask, with a user-friendly HTML front-end interface.
+This project is a deep learning-based image classification model that identifies whether an uploaded image is of a cat or a dog. The model is trained on a dataset of 22k+ images and deployed using Flask, with a user-friendly HTML front-end interface.
 
 ---
 
 ## 📋 Table of Contents
-
-1. [Introduction](#introduction)
-2. [Features](#features)
-3. [Technologies Used](#technologies-used)
-4. [Dataset Description](#dataset-description)
-5. [Model Training](#model-training)
-6. [Deployment](#deployment)
-7. [Results and Accuracy](#results-and-accuracy)
-8. [Future Enhancements](#future-enhancements)
-9. [Contributing](#contributing)
-10. [License](#license)
-11. [How to Run the Project](#how-to-run-the-project)
+- [📖 Introduction](#-introduction)
+- [✨ Features](#-features)
+- [⚙️ Technologies Used](#%EF%B8%8F-technologies-used)
+- [📂 Dataset Description](#-dataset-description)
+- [🧠 Model Training](#-model-training)
+- [🌐 Deployment](#-deployment)
+- [📊 Results and Accuracy](#-results-and-accuracy)
+- [🔮 Future Enhancements](#-future-enhancements)
+- [🤝 Contributing](#-contributing)
+- [📜 License](#-license)
+- [🚀 How to Run the Project](#-how-to-run-the-project)
 
 ---
 
 ## 📖 Introduction
 
-This project uses Convolutional Neural Networks (CNNs) to classify images into two categories: **cats** and **dogs**. The model is trained and evaluated on a dataset of 22,000+ labeled images and is capable of providing predictions in a deployed Flask application.
+This project uses Convolutional Neural Networks (CNNs) to classify images into two categories: cats and dogs. The model is trained and evaluated on a dataset of 22,000+ labeled images and is capable of providing predictions in a deployed Flask application.
 
 ---
 
@@ -49,20 +48,20 @@ This project uses Convolutional Neural Networks (CNNs) to classify images into t
 
 ## 📂 Dataset Description
 
-- **Source**: [Kaggle's Cats and Dogs Dataset](https://www.kaggle.com/)
+- **Source**: Kaggle's Cats and Dogs Dataset
 - **Total Images**: 22,000+
   - Cats: 11,000+
   - Dogs: 11,000+
 - **Splits**:
-  - Training: 70%
-  - Validation: 15%
-  - Testing: 15%
-  
-Dataset preprocessing involves resizing the images to `150x150 pixels` and normalizing the pixel values to the range `[0, 1]`.
+  - **Training**: 70%
+  - **Validation**: 15%
+  - **Testing**: 15%
+
+Dataset preprocessing involves resizing the images to 150x150 pixels and normalizing the pixel values to the range [0, 1].
 
 ---
 
-### 🧠 Model Training
+## 🧠 Model Training
 
 The model is built using a CNN architecture with the following layers:
 
@@ -71,7 +70,7 @@ The model is built using a CNN architecture with the following layers:
 - **Dense Layers**: Fully connected layers for classification.
 - **Output Layer**: Binary classification using a sigmoid activation function.
 
-**Hyperparameters:**
+**Hyperparameters**:
 - **Optimizer**: Adam
 - **Loss Function**: Binary Crossentropy
 - **Batch Size**: 32
@@ -79,7 +78,7 @@ The model is built using a CNN architecture with the following layers:
 
 ---
 
-### 🌐 Deployment
+## 🌐 Deployment
 
 The project is deployed using Flask, with an interactive front-end where users can upload an image to classify it. The interface includes:
 
@@ -89,7 +88,7 @@ The project is deployed using Flask, with an interactive front-end where users c
 
 ---
 
-### 📊 Results and Accuracy
+## 📊 Results and Accuracy
 
 - **Training Accuracy**: ~95%
 - **Validation Accuracy**: ~93%
@@ -103,7 +102,7 @@ The project is deployed using Flask, with an interactive front-end where users c
 
 ---
 
-### 🔮 Future Enhancements
+## 🔮 Future Enhancements
 
 - **Add "Unknown" Category**: Improve model robustness by rejecting non-cat/dog images.
 - **Integrate Transfer Learning**: Use pre-trained models (e.g., ResNet) for better performance.
@@ -111,7 +110,7 @@ The project is deployed using Flask, with an interactive front-end where users c
 
 ---
 
-### 🤝 Contributing
+## 🤝 Contributing
 
 Contributions are welcome! Please follow these steps:
 
@@ -122,7 +121,7 @@ Contributions are welcome! Please follow these steps:
 
 ---
 
-### 📜 License
+## 📜 License
 
 This project is licensed under the [MIT License](LICENSE).
 
@@ -131,16 +130,6 @@ This project is licensed under the [MIT License](LICENSE).
 ## 🚀 How to Run the Project
 
 ### 1. Clone the Repository
+```bash
 git clone https://github.com/your-username/cat-dog-classifier.git
 cd cat-dog-classifier
-
-### 2. Train the Model
-To train the model on your system:
-python train_model.py
-Trained models are saved as cat_dog_classifier.keras.
-
-### 3. Run the Flask App
-python app.py
-
-### 4. Open the Web Application
-Navigate to http://127.0.0.1:5000/ in your browser. Upload an image to classify it as a cat or a dog.
