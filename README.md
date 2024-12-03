@@ -10,13 +10,13 @@ This project is a deep learning-based image classification model that identifies
 2. [Features](#features)
 3. [Technologies Used](#technologies-used)
 4. [Dataset Description](#dataset-description)
-5. [How to Run the Project](#how-to-run-the-project)
-6. [Model Training](#model-training)
-7. [Deployment](#deployment)
-8. [Results and Accuracy](#results-and-accuracy)
-9. [Future Enhancements](#future-enhancements)
-10. [Contributing](#contributing)
-11. [License](#license)
+5. [Model Training](#model-training)
+6. [Deployment](#deployment)
+7. [Results and Accuracy](#results-and-accuracy)
+8. [Future Enhancements](#future-enhancements)
+9. [Contributing](#contributing)
+10. [License](#license)
+11. [How to Run the Project](#how-to-run-the-project)
 
 ---
 
@@ -68,3 +68,5 @@ Dataset preprocessing involves resizing the images to `150x150 pixels` and norma
 ```bash
 git clone https://github.com/your-username/cat-dog-classifier.git
 cd cat-dog-classifier
+
+##
